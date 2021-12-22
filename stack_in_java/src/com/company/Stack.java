@@ -29,4 +29,12 @@ public class Stack {
     public void peek(){
         System.out.println("Peek Value " + stack[top-1]);
     }
+
+    public int size(){
+        return top;
+    }
+
+    public boolean isEmpty(){
+        return top == 0;
+    }
 }
