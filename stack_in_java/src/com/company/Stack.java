@@ -11,7 +11,7 @@ public class Stack {
     }
 
     public void show(){
-        System.out.print("Printing array --> ");
+        System.out.print("Printing stack --> ");
         for(int i=0; i<5; i++){
             System.out.print(stack[i] + " ");
         }
