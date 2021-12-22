@@ -6,8 +6,13 @@ public class Stack {
     int top = 0;
 
     public void push(int data){
-        stack[top] = data;
-        top++;
+        if(top < 5){
+            stack[top] = data;
+            top++;
+        }else{
+            System.out.println("Stack is full...");
+        }
+
     }
 
     public void show(){
@@ -20,9 +25,14 @@ public class Stack {
 
     public void pop(){
         top--;
-        int data = stack[top];
-        System.out.println("Removed " + data + " from stack.");
-        stack[top] = 0;
+        if(top == -1){
+            System.out.println("Error");
+        }else{
+            int data = stack[top];
+            System.out.println("Removed " + data + " from stack.");
+            stack[top] = 0;
+        }
+
 
     }
 
