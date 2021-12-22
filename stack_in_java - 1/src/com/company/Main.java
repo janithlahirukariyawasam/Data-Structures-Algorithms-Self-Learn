@@ -8,6 +8,7 @@ public class Main {
         nums.push(2);
         nums.pop();
         nums.pop();
+
        /* nums.push(5);
         nums.push(6);
         nums.push(10);
