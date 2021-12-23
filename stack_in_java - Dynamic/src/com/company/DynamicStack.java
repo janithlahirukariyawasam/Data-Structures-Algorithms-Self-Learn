@@ -2,17 +2,26 @@ package com.company;
 
 public class DynamicStack {
 
-    int[] stack = new int[5];
+    int capacity = 2;
+    int[] stack = new int[capacity];
     int top = 0;
 
     public void push(int data){
-        if(top < 5){
-            stack[top] = data;
-            top++;
-        }else{
-            System.out.println("Stack is full...");
-        }
+        if(size() == capacity){
+            expand();
+        }else {}
 
+
+        stack[top] = data;
+        top++;
+    }
+
+    private void expand() {
+        int length = size();
+        int newStack[] = new int[capacity*2];
+        System.arraycopy(stack,0,newStack,0, length);
+        stack = newStack;
+        capacity = capacity * 2;
     }
 
     public void show(){
