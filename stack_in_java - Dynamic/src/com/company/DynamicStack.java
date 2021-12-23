@@ -1,6 +1,6 @@
 package com.company;
 
-public class Stack {
+public class DynamicStack {
 
     int[] stack = new int[5];
     int top = 0;
