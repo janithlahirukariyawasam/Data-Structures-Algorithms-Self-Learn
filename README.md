@@ -1,3 +1,3 @@
 # Data-Structures-Algorithms-Self-Learn
 
-Stacks in Java
+1. Stacks in Java
